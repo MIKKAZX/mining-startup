@@ -45,7 +45,7 @@ done
 killall Xorg || true
 
 #Run nsfminer
-./nsfminer -P stratum://0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1@eu1.ethermine.org:4444
+/home/mikka/mining-startup/nsfminer -P stratum://0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1@eu1.ethermine.org:4444
 
 #Run Pheonixminer
 #/home/mikka/ethereum-quickstart/phoenixminer/PhoenixMiner -pool ssl://eu1.ethermine.org:5555 -pool2 ssl://us1.ethermine.org:5555 -wal 0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1 -proto 3
