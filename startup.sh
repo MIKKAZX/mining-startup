@@ -45,14 +45,14 @@ done
 killall Xorg || true
 
 #Run nsfminer
-/home/mikka/mining-startup/nsfminer -P stratum://0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1@eu1.ethermine.org:4444
+screen -S "mine" -U -d -m /home/mikka/mining-startup/nsfminer -P stratum://0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1@eu1.ethermine.org:4444
 
 #Run Pheonixminer
 #/home/mikka/ethereum-quickstart/phoenixminer/PhoenixMiner -pool ssl://eu1.ethermine.org:5555 -pool2 ssl://us1.ethermine.org:5555 -wal 0x2095505977009337dD2Dce83bc8baEc15427Db3A.node1 -proto 3
 
 #Run Ethminer:
 #./ethminer/ethminer -P stratums://0x2095505977009337dD2Dce83bc8baEc15427Db3A.node001@eu1.ethermine.org:5555 -G
-export PATH=$PATH:/opt/rocm/bin:/opt/rocm/rocprofiler/bin:/opt/rocm/opencl/bin
+#export PATH=$PATH:/opt/rocm/bin:/opt/rocm/rocprofiler/bin:/opt/rocm/opencl/bin
 
 #restart the script every 4 hours in case it has lost internet:
 sleep 4h
